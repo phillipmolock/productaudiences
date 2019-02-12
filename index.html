@@ -25,12 +25,15 @@
         }
         
         function pushBingProductAudience(ecomm_prodid, ecomm_pagetype){
+            console.log(ecomm_prodid);
+            console.log(ecomm_pagetype);
             window.uetq = window.uetq || [];  
             window.uetq.push ('event', '', {'ecomm_prodid': ecomm_prodid, 'ecomm_pagetype': ecomm_pagetype}); 
         }
 
         
-        pushBingProductAudience(getBingPageType(lowesPageTypeX),bingProductId);  
+        pushBingProductAudience(getBingPageType(lowesPageTypeX),bingProductId); 
+
     </script>
 </head>
 <body>
