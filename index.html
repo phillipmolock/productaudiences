@@ -8,7 +8,7 @@
 
         function getBingPageType(lowesPageType){
             switch(lowesPageType){
-                case 1:
+                case 'home':
                     return 'home';
                 case 2:
                     return 'category';
@@ -28,11 +28,11 @@
             console.log(ecomm_prodid);
             console.log(ecomm_pagetype);
             window.uetq = window.uetq || [];  
-            window.uetq.push ('event', '', {'ecomm_prodid': `${ecomm_prodid}`, 'ecomm_pagetype': `${ecomm_pagetype}`}); 
+            window.uetq.push ('event', '', {'ecomm_prodid': '1', 'ecomm_pagetype': 'home'}); 
         }
 
         
-        pushBingProductAudience(getBingPageType(lowesPageTypeX),bingProductId); 
+        pushBingProductAudience(getBingPageType('home'),bingProductId); 
 
     </script>
 </head>
